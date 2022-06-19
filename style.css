@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+}
+
+body p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(208, 11%, 55%);
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.community-a{
+    padding: 10px;
+}
+
+nav{
+    padding: 3em;
+    
+}
+
+header{
+    background-color: hsl(193, 100%, 96%);
+    background-image: url('images/bg-hero-desktop.svg');
+    margin-top: 0;
+    /* padding: 2em; */
+}
+
+nav button{
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.community, .growth, .conversations, .users{
+    display: flex;
+    width: 100%;  
+    margin: auto; 
+    justify-content: center; 
+    align-items: center;
+}
+
+main div{
+    padding: 20px;
+}
+
+main img{
+    width: 100%;
+}
+
+header img{
+    width: 100%;
+}
+nav .logo{
+    float: left;
+}
+
+nav .button{
+    float: right;
+}
+
+.community{
+    padding: 3em;
+    padding-bottom: 10px;
+}
+
+.growth{
+    /* background-color: aliceblue; */
+    width: 90%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    border-radius: 8px;
+    border: 3px solid aliceblue;
+}
+
+.users{
+    width: 90%;
+    margin-bottom: 10em;
+    margin-top: 2em;
+    border-radius: 8px;
+    border: 3px solid aliceblue;
+}
+
+.conversations{
+    width: 90%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    border-radius: 8px;
+    border: 3px solid aliceblue;
+}
+
+.growth-a, .conversations-b, .users-a{
+    width: 90%;
+    padding: 5em;
+    
+}
+
+.growth-a, img{
+    width: 100%;
+}
+
+.community-a p{
+    padding-bottom: 20px;
+}
+
+.community-a button{
+    background-color: hsl(322, 100%, 66%);
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(193, 100%, 96%);
+}
+
+button:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.3);
+}
+
+
+footer{
+    background-color: hsl(192, 100%, 9%); 
+    color: hsl(193, 100%, 96%);
+    padding: 150px 50px 50px;
+    position: relative;
+}
+
+.footer{
+    display: grid;
+    grid-template-areas: 
+    'a a a a'
+    'b c d e'
+    ;
+    gap: 10px;
+}
+
+footer p{
+    text-align: right;
+}
+
+.action{
+    color: hsl(192, 100%, 9%);
+    background-color: hsl(193, 100%, 96%); 
+    padding: 40px;
+    text-align: center;
+    position: absolute;
+    left: 400px; 
+    top: -80px; 
+    z-index: 1;
+}
+
+.action, h2{
+    padding-bottom: 20px;
+}
+
+.action button{
+    
+    background-color: hsl(322, 100%, 66%);
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(193, 100%, 96%);
+}
+
+.logo{
+    grid-area: a;
+    background-color: aliceblue;
+    width: 250px;
+    padding: 10px;
+}
+
+.lorem{
+    grid-area: b;
+}
+
+.link{
+    grid-area: c;
+}
+
+.link2{
+    grid-area: d;
+}
+.socials{
+    grid-area: e;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+li{
+    padding: 10px;
+}
+
+.location::before{
+    content: "";
+    display: block;
+    background: url("images/icon-location.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.phone::before{
+    content: " ";
+    display: block;
+    background: url("images/icon-phone.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.email::before{
+    content: " ";
+    display: block;
+    background: url("images/icon-email.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+
+@media (max-width: 700px){
+    div{
+        display: block;
+    }
+    img{
+        width: 100%;
+    }
+}
