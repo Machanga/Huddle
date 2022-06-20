@@ -320,7 +320,7 @@ li{
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
     nav {
         display: flex;
         flex-direction: row;
@@ -348,10 +348,15 @@ li{
     }
     .community, .growth, .conversations, .users{
         flex-direction: column;
-        padding-bottom: 40px;
-        text-align: center;
+        padding-bottom: 10px;
+        text-align: center; 
+        width: 100%; 
     }
 
+    .growth-a, .conversations-b, .users-b{
+        width: 100%;
+        margin: 0;
+    }
     .community-a{
         padding-bottom: 2em;
         text-align: center;
@@ -410,6 +415,10 @@ li{
     footer p{
         text-align: center;
         padding-top: 1em;
+    }
+
+    body{
+        font-size: 14px;
     }
 }
 
